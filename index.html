@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hà Giang 3N2Đ — 06 → 08/09/2026</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #faf7f2; color: #1f1d1a; font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 32px 24px 80px; }
+  header.hero { border-bottom: 1px solid #e8e2d6; padding-bottom: 20px; margin-bottom: 28px; }
+  .eyebrow { font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: #8a7e6b; }
+  h1 { font-size: 30px; margin: 6px 0 4px; letter-spacing: -.01em; }
+  .sub { color: #6b6358; font-size: 14px; }
+  .meta { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 10px; }
+  .pill { border: 1px solid #e0d8c6; background: #fff; padding: 6px 12px; border-radius: 999px; font-size: 12px; color: #5a5246; }
+  section { background: #fff; border: 1px solid #ece6d8; border-radius: 14px; padding: 22px 22px 18px; margin-bottom: 18px; }
+  section h2 { font-size: 16px; margin: 0 0 14px; letter-spacing: .02em; text-transform: uppercase; color: #6b6358; }
+  .grid { display: grid; gap: 10px; }
+  .grid.cols-2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .grid.cols-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+  @media (max-width: 640px) { .grid.cols-2, .grid.cols-3 { grid-template-columns: 1fr; } }
+  label { display: block; font-size: 12px; color: #6b6358; margin-bottom: 4px; }
+  input[type="text"], input[type="date"], input[type="time"], input[type="number"], textarea, select {
+    width: 100%; border: 1px solid #e0d8c6; background: #fbf8f1; border-radius: 8px; padding: 8px 10px; font: inherit; color: #1f1d1a;
+  }
+  textarea { min-height: 60px; resize: vertical; }
+  .row { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border: 1px solid #ece6d8; border-radius: 8px; background: #fbf8f1; }
+  .row input[type="checkbox"] { accent-color: #b25a3a; }
+  .row label { margin: 0; flex: 1; font-size: 14px; color: #2a2620; cursor: pointer; }
+  .row.done label { text-decoration: line-through; color: #9a907f; }
+  .group { display: grid; gap: 8px; }
+  .day { border: 1px solid #ece6d8; border-radius: 12px; padding: 14px; background: #fbf8f1; }
+  .day .head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; gap: 10px; flex-wrap: wrap; }
+  .day .head h3 { margin: 0; font-size: 14px; text-transform: uppercase; letter-spacing: .06em; color: #b25a3a; }
+  .day .head input { max-width: 320px; }
+  .itinerary { display: grid; grid-template-columns: 90px 1fr 1fr 1fr; gap: 8px; }
+  .itinerary .h { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: #8a7e6b; padding: 0 4px; }
+  @media (max-width: 700px) { .itinerary { grid-template-columns: 1fr 1fr; } }
+  .toolbar { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 6px; }
+  button { cursor: pointer; border: 1px solid #d6cdb8; background: #fff; color: #2a2620; padding: 8px 14px; border-radius: 8px; font: inherit; font-size: 13px; }
+  button.primary { background: #b25a3a; border-color: #b25a3a; color: #fff; }
+  button:hover { opacity: .92; }
+  .note { font-size: 12px; color: #8a7e6b; margin-top: 10px; }
+  .col { display: grid; gap: 10px; }
+  .sep { height: 1px; background: #ece6d8; margin: 12px 0; }
+  details > summary { cursor: pointer; font-size: 13px; color: #6b6358; }
+  .footer { margin-top: 26px; font-size: 12px; color: #8a7e6b; text-align: center; }
+  .user-bar { background: #fff7ec; border: 1px dashed #e0d8c6; border-radius: 12px; padding: 14px 16px; margin-bottom: 18px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .user-bar .label { font-size: 12px; color: #6b6358; text-transform: uppercase; letter-spacing: .08em; }
+  .user-bar input { flex: 1; min-width: 200px; }
+  .user-bar select { width: auto; min-width: 160px; }
+  .user-bar .who { font-size: 13px; color: #2a2620; }
+  .user-bar .who b { color: #b25a3a; }
+  @media print {
+    body { background: #fff; }
+    .toolbar, button, .user-bar { display: none !important; }
+    section { border: none; padding: 0; margin-bottom: 14px; box-shadow: none; }
+    .row { background: #fff; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="eyebrow">Chuyến đi</div>
+    <h1>Hà Giang 3 ngày 2 đêm</h1>
+    <div class="sub">Mẫu dùng chung — mỗi người gõ tên vào ô bên dưới để điền phần của mình. Trình duyệt nhớ lại cho lần sau.</div>
+    <div class="meta">
+      <span class="pill">Khởi hành: 06/09/2026</span>
+      <span class="pill">Về: 08/09/2026</span>
+      <span class="pill">Xuất phát: Hà Nội</span>
+      <span class="pill">Khứ hồi: xe giường nằm</span>
+      <span class="pill">Khách sạn: Đồng Văn (2 đêm)</span>
+      <span class="pill">Tự trải nghiệm: xe máy</span>
+      <span class="pill">Phong cách: Khám phá landmark</span>
+    </div>
+  </header>
+
+  <div class="user-bar">
+    <span class="label">Người đang điền</span>
+    <input type="text" id="me" placeholder="Gõ tên của anh/chị rồi Enter…">
+    <button id="save-me" class="primary">Lưu tên</button>
+    <span class="who" id="who">Chưa có ai — mỗi người gõ tên mình vào ô bên trái để bắt đầu.</span>
+  </div>
+
+  <div class="toolbar">
+    <button class="primary" id="copy">Sao chép nội dung của tôi</button>
+    <button id="print">In / Xuất PDF</button>
+    <button id="export-all">Tải file tổng (TXT) để gửi nhóm</button>
+    <button id="reset">Xoá phần của tôi</button>
+  </div>
+  <div class="note">Mỗi người một "phiên" riêng trong trình duyệt — lưu lần đầu bằng cách gõ tên rồi bấm <strong>Lưu tên</strong>. Lần sau mở file, chọn lại tên ở menu (nếu có) hoặc gõ lại. Bấm <strong>Tải file tổng</strong> để xuất cả nhóm gửi cho anh/chủ chuyến.</div>
+
+  <section>
+    <h2>1. Thông tin chung (chỉ chủ chuyến cần điền)</h2>
+    <div class="grid cols-2">
+      <div><label>Người đi chính</label><input type="text" data-k="trip.lead"></div>
+      <div><label>Số người tham gia</label><input type="text" data-k="trip.count"></div>
+      <div><label>Điểm xuất phát</label><input type="text" data-k="trip.from" value="Hà Nội"></div>
+      <div><label>Phương tiện khứ hồi</label><input type="text" data-k="trip.transport" value="Xe giường nằm"></div>
+      <div><label>Khách sạn</label><input type="text" data-k="trip.stay" value="Đồng Văn — 2 đêm (06/09, 07/09)"></div>
+      <div><label>Di chuyển trong tỉnh</label><input type="text" data-k="trip.local" value="Thuê xe máy tự lái"></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>2. Checklist chuẩn bị trước chuyến đi</h2>
+    <div class="note" style="margin:0 0 10px">Mỗi người tick vào những việc <strong>mình đã lo xong</strong>. Ghi chú bên cạnh (tuỳ chọn) để cả nhóm biết ai phụ trách.</div>
+    <div class="group" id="checklist-pre"></div>
+    <div class="sep"></div>
+    <details>
+      <summary>+ Thêm mục cần chuẩn bị</summary>
+      <div class="grid cols-2" style="margin-top:10px">
+        <input type="text" id="new-pre" placeholder="Nhập mục mới rồi bấm Thêm">
+        <button id="add-pre">Thêm</button>
+      </div>
+    </details>
+  </section>
+
+  <section>
+    <h2>3. Hành lý & vật dụng (mỗi người một bộ)</h2>
+    <div class="note" style="margin:0 0 10px">Checklist chung dưới đây. Mục "đồ của tôi" anh/chị tự thêm để khỏi quên.</div>
+    <div class="grid cols-3">
+      <div>
+        <div class="eyebrow" style="margin-bottom:6px">Giấy tờ</div>
+        <div class="group" data-group="luggage-docs"></div>
+      </div>
+      <div>
+        <div class="eyebrow" style="margin-bottom:6px">Trang phục</div>
+        <div class="group" data-group="luggage-clothes"></div>
+      </div>
+      <div>
+        <div class="eyebrow" style="margin-bottom:6px">Thiết bị & khác</div>
+        <div class="group" data-group="luggage-gear"></div>
+      </div>
+    </div>
+    <div class="sep"></div>
+    <div class="col">
+      <label>Đồ riêng của tôi (không trùng với checklist chung)</label>
+      <textarea data-k="personal.items" placeholder="Ví dụ: thuốc dị ứng cá nhân, sạc riêng, v.v."></textarea>
+    </div>
+    <div class="sep"></div>
+    <details>
+      <summary>+ Thêm vật dụng vào checklist chung</summary>
+      <div class="grid cols-3" style="margin-top:10px">
+        <select id="new-luggage-cat">
+          <option value="docs">Giấy tờ</option>
+          <option value="clothes">Trang phục</option>
+          <option value="gear">Thiết bị & khác</option>
+        </select>
+        <input type="text" id="new-luggage" placeholder="Ví dụ: áo khoác gió">
+        <button id="add-luggage">Thêm</button>
+      </div>
+    </details>
+  </section>
+
+  <section>
+    <h2>4. Lịch trình 3 ngày (góp ý chung)</h2>
+    <div class="note" style="margin:0 0 10px">Mỗi dòng: giờ – địa điểm – hoạt động – ghi chú. Ai thấy hay thì điền vào, cả nhóm cùng xem.</div>
+    <div id="days"></div>
+    <div class="sep"></div>
+    <button id="add-stop">+ Thêm dòng hoạt động</button>
+  </section>
+
+  <section>
+    <h2>5. Ngân sách dự kiến (mỗi người tự ghi phần mình chi)</h2>
+    <div class="grid cols-3">
+      <div><label>Xe giường nằm khứ hồi</label><input type="text" data-k="budget.transport"></div>
+      <div><label>Khách sạn Đồng Văn (2 đêm)</label><input type="text" data-k="budget.stay"></div>
+      <div><label>Thuê xe máy</label><input type="text" data-k="budget.motorbike"></div>
+      <div><label>Ăn uống</label><input type="text" data-k="budget.food"></div>
+      <div><label>Vé tham quan</label><input type="text" data-k="budget.ticket"></div>
+      <div><label>Mua sắm / quà</label><input type="text" data-k="budget.shopping"></div>
+      <div><label>Dự phòng</label><input type="text" data-k="budget.reserve"></div>
+      <div><label>Tôi đã chi trước (ghi rõ khoản)</label><input type="text" data-k="budget.mepaid"></div>
+      <div><label>Tôi cần được trả lại / đóng thêm</label><input type="text" data-k="budget.mebalance"></div>
+    </div>
+    <div class="note">Ghi theo đơn vị anh muốn (triệu / đồng). Để trống nếu chưa tính.</div>
+  </section>
+
+  <section>
+    <h2>6. Danh bạ & liên hệ quan trọng</h2>
+    <div class="grid cols-2">
+      <div><label>Người liên hệ khẩn cấp ở nhà (của tôi)</label><input type="text" data-k="contact.emergency"></div>
+      <div><label>Chủ phòng / host khách sạn Đồng Văn</label><input type="text" data-k="contact.host"></div>
+      <div><label>Bên cho thuê xe máy</label><input type="text" data-k="contact.bikerental"></div>
+      <div><label>Nhà xe giường nằm</label><input type="text" data-k="contact.bus"></div>
+      <div><label>Công ty bảo hiểm</label><input type="text" data-k="contact.insurance"></div>
+    </div>
+    <div class="sep"></div>
+    <div class="col">
+      <label>Số hotline cần nhớ (cứu hộ, công an, cấp cứu)</label>
+      <textarea data-k="contact.hotline" placeholder="Ví dụ: 113, 115, 114, hotline cứu hộ cao tốc..."></textarea>
+    </div>
+  </section>
+
+  <section>
+    <h2>7. Ghi chú riêng của tôi</h2>
+    <textarea data-k="note.after" placeholder="Sau chuyến đi: điều gì suôn, điều gì cần khác lần sau…"></textarea>
+  </section>
+
+  <div class="footer">Hà Giang 3N2Đ · 06 → 08/09/2026 · Mẫu dùng chung — mỗi người gõ tên để điền phần mình</div>
+</div>
+
+<script>
+(function(){
+  const PRE = [
+    "Đặt vé xe giường nằm chiều đi (HN → Hà Giang)",
+    "Đặt vé xe giường nằm chiều về (Hà Giang → HN)",
+    "Book khách sạn Đồng Văn — đêm 06/09",
+    "Book khách sạn Đồng Văn — đêm 07/09",
+    "Liên hệ thuê xe máy (giao tại bến xe / khách sạn)",
+    "Mua bảo hiểm du lịch",
+    "Xem dự báo thời tiết 3 ngày ở Hà Giang",
+    "Thông báo lịch trình cho người nhà",
+    "Sạc đầy thiết bị, sao lưu giấy tờ lên cloud",
+    "Rút tiền mặt / mang đủ tiền"
+  ];
+  const LUGGAGE = {
+    docs: [
+      "CMND/CCCD (bản gốc + photo)",
+      "GPLX (bắt buộc khi thuê xe máy)",
+      "Xác nhận đặt phòng / vé xe (bản in/ảnh)"
+    ],
+    clothes: [
+      "Áo khoác gió / giữ ấm",
+      "Áo mưa / poncho cho đèo",
+      "Giày leo nhẹ hoặc sandals",
+      "Mũ + kính + găng tay xe máy"
+    ],
+    gear: [
+      "Sạc dự phòng",
+      "Thuốc cá nhân + bộ sơ cứu",
+      "Bình nước",
+      "Máy ảnh / điện thoại + dây sạc",
+      "Khoá xe máy / dây chống trộm"
+    ]
+  };
+  const DAYS = [
+    { title: "Ngày 1 — 06/09 (Chủ nhật)", slots: 5 },
+    { title: "Ngày 2 — 07/09 (Thứ 2)", slots: 6 },
+    { title: "Ngày 3 — 08/09 (Thứ 3)", slots: 5 }
+  ];
+
+  const $ = (s, r=document) => r.querySelector(s);
+  const $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
+
+  // -------- Per-user storage (mỗi người 1 phiên riêng trong trình duyệt) --------
+  // Lưu ý: trình duyệt có thể chặn localStorage khi mở file .html bằng file:// — nếu vậy
+  // mỗi người sẽ thấy dữ liệu trống nhưng vẫn điền và copy được bình thường.
+  const STORE = "hagiang-3n2d:v1";
+  const allData = loadStore();
+  let me = null;
+  const knownNames = Object.keys(allData);
+
+  function loadStore(){
+    try { return JSON.parse(localStorage.getItem(STORE) || "{}"); }
+    catch { return {}; }
+  }
+  function saveStore(){
+    try { localStorage.setItem(STORE, JSON.stringify(allData)); }
+    catch {}
+  }
+  function myData(){
+    if (!me) return null;
+    if (!allData[me]) allData[me] = blank();
+    return allData[me];
+  }
+  function blank(){
+    return {
+      fields: {},     // giá trị các ô input/textarea
+      checklist: {},  // {preIndex: true/false} (chung, ai tick cũng ghi vào)
+      personal: []    // danh sách vật dụng cá nhân (string)
+    };
+  }
+
+  // -------- Render ----------
+  function renderChecklist(items, host){
+    host.innerHTML = "";
+    const data = myData() || {checklist:{}};
+    items.forEach((t, i) => {
+      const checked = !!data.checklist["pre:"+i];
+      const row = document.createElement("div");
+      row.className = "row" + (checked ? " done" : "");
+      row.innerHTML = `<input type="checkbox" data-ci="${i}" ${checked? "checked":""}><label>${t}</label>`;
+      row.querySelector("input").addEventListener("change", e => {
+        if (!me) return alert("Anh/chị gõ tên ở ô phía trên trước, rồi bấm Lưu tên.");
+        const d = myData();
+        d.checklist["pre:"+i] = e.target.checked;
+        row.classList.toggle("done", e.target.checked);
+        saveStore();
+      });
+      host.appendChild(row);
+    });
+  }
+  renderChecklist(PRE.slice(), $("#checklist-pre"));
+  Object.entries(LUGGAGE).forEach(([k, arr]) => {
+    const host = document.querySelector(`[data-group="luggage-${k}"]`);
+    renderChecklist(arr.slice(), host);
+  });
+
+  function makeRow(di, s){
+    const r = document.createElement("div");
+    r.className = "itinerary";
+    r.style.gridColumn = "1 / -1";
+    r.innerHTML = `
+      <input type="time" data-k="r${di}.${s}.t">
+      <input type="text" data-k="r${di}.${s}.p" placeholder="Địa điểm">
+      <input type="text" data-k="r${di}.${s}.a" placeholder="Hoạt động">
+      <input type="text" data-k="r${di}.${s}.n" placeholder="Ghi chú">
+    `;
+    return r;
+  }
+  function renderDays(){
+    const host = $("#days");
+    host.innerHTML = "";
+    DAYS.forEach((d, di) => {
+      const box = document.createElement("div");
+      box.className = "day";
+      box.innerHTML = `
+        <div class="head">
+          <h3>${d.title}</h3>
+          <input type="text" data-k="day${di}.focus" placeholder="Chủ đề ngày này (tự điền)">
+        </div>
+        <div class="itinerary">
+          <div class="h">Giờ</div><div class="h">Địa điểm</div><div class="h">Hoạt động</div><div class="h">Ghi chú</div>
+        </div>
+        <div class="itinerary" data-rows="${di}"></div>
+      `;
+      host.appendChild(box);
+      const rows = box.querySelector(`[data-rows="${di}"]`);
+      for (let s = 0; s < d.slots; s++) rows.appendChild(makeRow(di, s));
+    });
+    restoreFields();
+  }
+  renderDays();
+
+  // -------- Field wiring (lưu theo từng người) --------
+  function restoreFields(){
+    const d = myData();
+    $$("[data-k]").forEach(el => {
+      if (d && el.dataset.k in d.fields) el.value = d.fields[el.dataset.k];
+    });
+  }
+  $$("[data-k]").forEach(el => {
+    el.addEventListener("input", () => {
+      if (!me) return; // cho điền thử nhưng không lưu
+      myData().fields[el.dataset.k] = el.value;
+      saveStore();
+    });
+  });
+
+  // -------- User bar --------
+  function refreshWho(){
+    const w = $("#who");
+    if (me) w.innerHTML = `Đang điền: <b>${me}</b> — lưu trên trình duyệt này.`;
+    else w.textContent = "Chưa có ai — gõ tên rồi bấm Lưu tên.";
+  }
+  function setMe(name){
+    if (!name) return;
+    me = name.trim();
+    if (!allData[me]) allData[me] = blank();
+    saveStore();
+    renderChecklist(PRE.slice(), $("#checklist-pre"));
+    Object.entries(LUGGAGE).forEach(([k, arr]) => {
+      const host = document.querySelector(`[data-group="luggage-${k}"]`);
+      renderChecklist(arr.slice(), host);
+    });
+    restoreFields();
+    refreshWho();
+  }
+  $("#save-me").addEventListener("click", () => setMe($("#me").value));
+  $("#me").addEventListener("keydown", e => { if (e.key === "Enter") setMe($("#me").value); });
+
+  // -------- Add items ----------
+  $("#add-pre").addEventListener("click", () => {
+    const inp = $("#new-pre");
+    if (!inp.value.trim()) return;
+    PRE.push(inp.value.trim()); inp.value = "";
+    renderChecklist(PRE, $("#checklist-pre"));
+  });
+  $("#add-luggage").addEventListener("click", () => {
+    const inp = $("#new-luggage");
+    const cat = $("#new-luggage-cat").value;
+    if (!inp.value.trim()) return;
+    LUGGAGE[cat].push(inp.value.trim()); inp.value = "";
+    renderChecklist(LUGGAGE[cat], document.querySelector(`[data-group="luggage-${cat}"]`));
+  });
+  $("#add-stop").addEventListener("click", () => {
+    DAYS.forEach(d => d.slots += 1);
+    renderDays();
+  });
+
+  // -------- Copy / Export / Reset ----------
+  $("#copy").addEventListener("click", () => {
+    const d = myData() || {fields:{}, checklist:{}};
+    const text = JSON.stringify({ name: me || "(chưa đặt tên)", ...d }, null, 2);
+    navigator.clipboard.writeText(text).then(() => flash($("#copy")));
+  });
+
+  $("#export-all").addEventListener("click", () => {
+    let txt = "HÀ GIANG 3N2Đ · 06–08/09/2026 — TỔNG HỢP TỪ MỌI NGƯỜI\n";
+    txt += "=".repeat(60) + "\n\n";
+    Object.keys(allData).forEach(name => {
+      const d = allData[name];
+      txt += `\n--- ${name} ---\n`;
+      Object.entries(d.fields || {}).forEach(([k,v]) => { if (v) txt += `${k}: ${v}\n`; });
+      const ticked = Object.entries(d.checklist || {}).filter(([_,v]) => v).map(([k]) => k);
+      if (ticked.length) txt += `checklist (đã tick): ${ticked.join(", ")}\n`;
+    });
+    if (Object.keys(allData).length === 0) txt += "(chưa có ai điền)\n";
+    const blob = new Blob([txt], {type:"text/plain;charset=utf-8"});
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "hagiang-3n2d-tong-hop.txt";
+    a.click();
+    flash($("#export-all"));
+  });
+
+  $("#print").addEventListener("click", () => window.print());
+  $("#reset").addEventListener("click", () => {
+    if (!me) return alert("Chưa có tên — không có gì để xoá.");
+    if (!confirm(`Xoá hết phần đã điền của ${me}?`)) return;
+    delete allData[me];
+    saveStore();
+    me = null; $("#me").value = ""; refreshWho();
+    $$("input, textarea").forEach(el => { if (el.type === "checkbox") el.checked = false; else el.value = ""; });
+    renderChecklist(PRE.slice(), $("#checklist-pre"));
+    Object.entries(LUGGAGE).forEach(([k, arr]) => renderChecklist(arr.slice(), document.querySelector(`[data-group="luggage-${k}"]`)));
+  });
+
+  function flash(btn){
+    const old = btn.textContent; btn.textContent = "✓ xong"; setTimeout(() => btn.textContent = old, 1200);
+  }
+
+  // Auto-fill người đầu tiên trong danh sách nếu có (tiện cho người mở lại)
+  if (knownNames.length === 1) {
+    $("#me").value = knownNames[0];
+    setMe(knownNames[0]);
+  } else {
+    refreshWho();
+  }
+})();
+</script>
+</body>
+</html>
